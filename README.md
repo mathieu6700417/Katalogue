@@ -1,17 +1,25 @@
 # Katalogue
-Katalogue
+Katalogue est un paquet python permettant d'accèder facilement à diverses sources de données. 
 
 ## Construction du paquet 
-`env/bin/python3 -m build`
+
+```bash
+python3 -m build
+```
+
 
 ## Déploiement du paquet sur testpypi
-`env/bin/twine upload -r testpypi dist/*`
+
+```bash
+twine upload -r testpypi dist/*
+```
 
 ## Utilisation
 
-`from katalogue.datagouv.associations import DépôtAssociationDataGouv
+```bash
+from katalogue.insee.communes import DépôtINSEECommunes
 
-dépot = DépôtAssociationDataGouv()
-dépot.associations()
-
-`
+dépôt = DépôtINSEECommunes()
+communes = dépôt.communes()
+communes.sample(5)
+```
