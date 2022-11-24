@@ -1,0 +1,3 @@
+communes:
+    url: "https://www.insee.fr/fr/statistiques/fichier/6051727/commune_2022.csv"
+    fichier: "communes.csv"
