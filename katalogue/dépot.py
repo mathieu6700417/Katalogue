@@ -6,7 +6,7 @@ class Dépot:
     def __init__(self, nom_fournisseur):
         chemin_dossier = os.path.dirname(__file__)
         
-        fichier_conf = os.path.join(chemin_dossier, "../config.yaml")
+        fichier_conf = os.path.join(chemin_dossier, "config.yaml")
         conf = yaml.safe_load(open(fichier_conf, "r").read())
 
         dossier = os.path.expanduser(conf['dossier'])
