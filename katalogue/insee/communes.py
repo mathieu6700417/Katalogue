@@ -1,5 +1,4 @@
 import os
-import requests
 import pandas as pd
 from katalogue.dépot import Dépot
     

@@ -1,0 +1,39 @@
+a_s:
+  url: "https://fenixservices.fao.org/faostat/static/bulkdownloads/FAOSTAT_A-S_E.zip"
+  fichier: "FAOSTAT_A-S_E.zip"
+  prix_consommateurs:
+    fichier: "ConsumerPriceIndices_E_All_Data_(Normalized).zip"
+    data:
+      fichier: 'ConsumerPriceIndices_E_All_Data_(Normalized).csv'
+    codes_aires:
+      fichier: 'ConsumerPriceIndices_E_AreaCodes.csv'
+    drapeaux:
+      fichier: 'ConsumerPriceIndices_E_Flags.csv'
+  
+
+
+t_z:
+  url: "https://fenixservices.fao.org/faostat/static/bulkdownloads/FAOSTAT_T-Z_E.zip"
+  fichier: "FAOSTAT_T-Z_E.zip"
+  commerce:
+    fichier: "Trade_DetailedTradeMatrix_E_All_Data_(Normalized).zip"
+    data:
+      fichier: "Trade_DetailedTradeMatrix_E_All_Data_(Normalized).csv"
+    codes_aires:
+      fichier: "Trade_DetailedTradeMatrix_E_AreaCodes.csv"
+    drapeaux:
+      fichier: "Trade_DetailedTradeMatrix_E_Flags.csv"
+    items:
+      fichier: "Trade_DetailedTradeMatrix_E_ItemCodes.csv"
+
+  récoltes:
+    fichier: "Production_Crops_Livestock_E_All_Data_(Normalized).zip"
+    data:
+      fichier: "Production_Crops_Livestock_E_All_Data_(Normalized).csv"
+    codes_aires:
+      fichier: "Production_Crops_Livestock_E_AreaCodes.csv"
+    drapeaux:
+      fichier: "Production_Crops_Livestock_E_Flags.csv"
+    items:
+      fichier: "Production_Crops_Livestock_E_ItemCodes.csv"
+
