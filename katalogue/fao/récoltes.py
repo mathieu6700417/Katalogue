@@ -10,11 +10,20 @@ class DépôtFAORécoltes(Dépot):
         super().__init__(nom_dossier_parent)
         
 
-    def récoltes(self):
-        self.télécharger("t_z")
-        self.décompresser("t_z")
-        self.décompresser("t_z.commerce")
+    def _dataframe(self, nom):
+        self.télécharger("d_z")
+        self.désarchiver("d_z")
+        self.désarchiver("récoltes")
         
-        df = pd.read_csv(self.chemin_fichier("t_z.commerce.data"), encoding="latin-1")
+        df = pd.read_csv(self.chemin_fichier(nom), encoding="latin-1")
         df.columns = list(map(lambda c: c.lower().replace(" ", "_"), df.columns))
         return df
+
+
+    def récoltes(self):
+        données = self._dataframe("récoltes_données")
+        return données.merge(self.symboles(), on="symbole", suffixes=["", "symbole_"])
+
+    def symboles(self):
+        return self._dataframe("récoltes_symboles")
+    

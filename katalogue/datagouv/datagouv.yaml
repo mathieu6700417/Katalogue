@@ -1,0 +1,15 @@
+association_RNA_Import: 
+    url: "https://www.data.gouv.fr/fr/datasets/r/5b3dc97d-2ba2-4cdb-99be-cc41f30e5b1a"
+    fichier: "RNA_Import_01112022.zip"
+
+association_RNA_Waldec:
+    url: "https://www.data.gouv.fr/fr/datasets/r/a5917286-48fc-4f3e-afb7-2b1ed5b468ad"
+    fichier: "RNA_Waldec_01112022.zip"
+
+association_ARUP:
+    url: "https://www.data.gouv.fr/fr/datasets/r/6ee5aa47-55b4-4b79-ae87-c5911174de03"
+    fichier: "ARUP_04_2021.xls"
+
+association_nomenclature_WALDEC:
+    url: "https://www.data.gouv.fr/fr/datasets/r/2b618348-cdb1-4d1b-a60c-26f5213b0f58"
+    fichier: "Nomenclature_WALDEC_14062022.csv"

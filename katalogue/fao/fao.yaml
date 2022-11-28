@@ -1,40 +1,26 @@
-a_s:
-  url: "https://fenixservices.fao.org/faostat/static/bulkdownloads/FAOSTAT_A-S_E.zip"
-  fichier: "FAOSTAT_A-S_E.zip"
-  prix_consommateurs:
-    fichier: "ConsumerPriceIndices_E_All_Data_(Normalized).zip"
-    data:
-      fichier: 'ConsumerPriceIndices_E_All_Data_(Normalized).csv'
-    codes_aires:
-      fichier: 'ConsumerPriceIndices_E_AreaCodes.csv'
-    drapeaux:
-      fichier: 'ConsumerPriceIndices_E_Flags.csv'
-  
+a_c:
+  url: "https://fenixservices.fao.org/faostat/static/bulkdownloads/FAOSTAT_A-C_F.zip"
+  fichier: "FAOSTAT_A-C_F.zip"
 
+d_z:
+  url: "https://fenixservices.fao.org/faostat/static/bulkdownloads/FAOSTAT_D-Z_F.zip"
+  fichier: "FAOSTAT_D-Z_F.zip"
 
-t_z:
-  url: "https://fenixservices.fao.org/faostat/static/bulkdownloads/FAOSTAT_T-Z_E.zip"
-  fichier: "FAOSTAT_T-Z_E.zip"
+pays:
+  url: "blob:https://www.fao.org/52d00f0f-9394-4afa-8ff3-aa5cc7d5eec1"
 
 commerce:
-  fichier: "Trade_DetailedTradeMatrix_E_All_Data_(Normalized).zip"
-    data:
-      fichier: "Trade_DetailedTradeMatrix_E_All_Data_(Normalized).csv"
-    codes_aires:
-      fichier: "Trade_DetailedTradeMatrix_E_AreaCodes.csv"
-    drapeaux:
-      fichier: "Trade_DetailedTradeMatrix_E_Flags.csv"
-    items:
-      fichier: "Trade_DetailedTradeMatrix_E_ItemCodes.csv"
+  fichier: "a_c/Commerce_MatricesCommerceDetaillees_F_Toutes_les_Données_(Normalisé).zip"
 
-  récoltes:
-    fichier: "Production_Crops_Livestock_E_All_Data_(Normalized).zip"
-    data:
-      fichier: "Production_Crops_Livestock_E_All_Data_(Normalized).csv"
-    codes_aires:
-      fichier: "Production_Crops_Livestock_E_AreaCodes.csv"
-    drapeaux:
-      fichier: "Production_Crops_Livestock_E_Flags.csv"
-    items:
-      fichier: "Production_Crops_Livestock_E_ItemCodes.csv"
+commerce_données:
+  fichier: "commerce/Commerce_MatricesCommerceDetaillees_F_Toutes_les_Données_(Normalisé).csv"
+
+récoltes:
+  fichier: "d_z/Production_Cultures_ProduitsAnimaux_F_Toutes_les_Données_(Normalisé).zip"
+  
+récoltes_données:
+  fichier: "récoltes/Production_Cultures_ProduitsAnimaux_F_Toutes_les_Données_(Normalisé).csv"
+
+récoltes_symboles:
+  fichier: "récoltes/Production_Cultures_ProduitsAnimaux_F_Symboles.csv"
 
