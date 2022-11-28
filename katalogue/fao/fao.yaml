@@ -15,8 +15,9 @@ a_s:
 t_z:
   url: "https://fenixservices.fao.org/faostat/static/bulkdownloads/FAOSTAT_T-Z_E.zip"
   fichier: "FAOSTAT_T-Z_E.zip"
-  commerce:
-    fichier: "Trade_DetailedTradeMatrix_E_All_Data_(Normalized).zip"
+
+commerce:
+  fichier: "Trade_DetailedTradeMatrix_E_All_Data_(Normalized).zip"
     data:
       fichier: "Trade_DetailedTradeMatrix_E_All_Data_(Normalized).csv"
     codes_aires:

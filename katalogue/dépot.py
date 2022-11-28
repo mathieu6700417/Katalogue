@@ -1,6 +1,7 @@
 import os
 import yaml
 import requests
+import zipfile
 
 class Dépot:
     def __init__(self, nom_fournisseur):
@@ -24,14 +25,19 @@ class Dépot:
         
     def télécharger(self, nom_source, forcer_téléchargement=False):
         url_fichier = self.config.get(nom_source).get('url')
-        nom_fichier = self.config.get(nom_source).get('fichier')
         
-        chemin_fichier = os.path.join(self.dossier, nom_fichier)
+        chemin_fichier = self.chemin_fichier(nom_source)
         if not(os.path.exists(chemin_fichier)) or forcer_téléchargement:
             resp = requests.get(url_fichier)
             with open(chemin_fichier, "wb") as f:
                 f.write(resp.content)
         
+
+    def décompresser(self, nom_source):
+        chemin_fichier = self.chemin_fichier(nom_source)
+        with zipfile.ZipFile(chemin_fichier, 'r') as zip_ref:
+            zip_ref.extractall(self.dossier)
         
+
     def chemin_fichier(self, nom_source):
         return os.path.join(self.dossier, self.config.get(nom_source).get('fichier'))
