@@ -9,10 +9,9 @@ class DépôtDataGouvAssociations(Dépot):
     def __init__(self):
         chemin_dossier = os.path.dirname(__file__)
         nom_dossier_parent = chemin_dossier.split("/")[-1]
-        
         super().__init__(nom_dossier_parent)
 
-    @Dépot.gérer_sauvegarde_locale
+    @Dépot.sauvegarde_locale
     def associations(self, sauvegarder_localement=False):
         
         # Récupération données assos
