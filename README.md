@@ -2,7 +2,6 @@
 Katalogue est un paquet python permettant d'accèder facilement à diverses sources de données. 
 
 ## Questions 
-- Pourrait on renommer le décorateur 'gérer_sauvegarde_locale' en 'sauvegarde_locale'
 - Comment fait on pour enlever le code qui se répète dans chaque classe fille dépot dans l'init? 
 - Il y a un premier filtre fait dans le fichier des assocs ? 
 - On va finir par avoir beaucoup de dépots dans datagouv ou insee, donc avoir beaucoup de fichiers dans les dossiers de données, ne devrait-on pas les séparer à nouveau par module? 

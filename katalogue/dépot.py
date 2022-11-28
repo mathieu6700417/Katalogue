@@ -51,7 +51,7 @@ class Dépot:
     def chemin_extraction(self, nom_source):
         return os.path.join(self.dossier, nom_source)
 
-    def gérer_sauvegarde_locale(fonction):
+    def sauvegarde_locale(fonction):
         def fonction_avec_sauvegarde(self, *argparams, **kwparams): #param, sauvegarder_localement): #TODO: gestion générique des params cas autres
             nom_dépôt = self.__class__.__name__
             nom_fonction = fonction.__name__
