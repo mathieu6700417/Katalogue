@@ -37,12 +37,16 @@ class DépôtINSEESireneEntreprises(Dépot):
             dfe = df[df.apply(fnCondition, axis=1)]
             nombre_trouvées += dfe.shape[0]
             dfs.append(dfe)
-            if nombre_trouvées >= nombre_maximum_entreprises:
+            if not(nombre_maximum_entreprises is None) and nombre_trouvées >= nombre_maximum_entreprises:
                 break
 
         df =  pd.concat(dfs)
         return df[0:nombre_maximum_entreprises]
-    
+
+    def entreprises_économie_sociale_et_solidaire(self, nombre_maximum_entreprises=100):
+        return self.trouver_entreprises(lambda e: not(pd.isna(e.economieSocialeSolidaireUniteLegale)) and e.economieSocialeSolidaireUniteLegale == "O",
+                                        nombre_maximum_entreprises)
+
 
     def entreprises_avec_codes_activite(self, codes_activites, nombre_maximum_entreprises=100):
         return self.trouver_entreprises(lambda e: e.activitePrincipaleUniteLegale in codes_activites, 

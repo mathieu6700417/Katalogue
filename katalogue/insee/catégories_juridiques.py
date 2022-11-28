@@ -28,5 +28,6 @@ class DépôtINSEECatégoriesJuridiques(Dépot):
                                 sheet_name=sheet_name,
                                 skiprows=3)
 
+        df.columns = list(map(lambda c: c.lower(), df.columns))
         return df
 

@@ -19,5 +19,6 @@ class DépôtINSEEArborescenceNAF(Dépot):
                                 low_memory=False, 
                                 encoding="UTF-8")
 
+        df.columns = list(map(lambda c: c.lower(), df.columns))
         return df
 
