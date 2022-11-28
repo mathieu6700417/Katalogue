@@ -1,0 +1,3 @@
+catalogue:
+  url: "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv"
+  fichier: "catalogue.csv"
