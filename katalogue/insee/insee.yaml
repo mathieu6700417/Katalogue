@@ -2,9 +2,6 @@ communes:
     url: "https://www.insee.fr/fr/statistiques/fichier/6051727/commune_2022.csv"
     fichier: "communes.csv"
 
-archive_etablissements:
-  url: "https://files.data.gouv.fr/insee-sirene/StockEtablissement_utf8.zip"
-  fichier: "etablissements.zip"
 
 archive_entreprises:
   url: "https://files.data.gouv.fr/insee-sirene/StockUniteLegale_utf8.zip"
@@ -12,6 +9,19 @@ archive_entreprises:
 
 entreprises:
   fichier: "archive_entreprises/StockUniteLegale_utf8.csv"
+
+
+catégories_juridiques:
+  url: "https://www.insee.fr/fr/statistiques/fichier/2028129/cj_septembre_2022.xls"
+  fichier: "cj.xls"
+
+arborescence_naf:
+  url: "https://static.data.gouv.fr/resources/nomenclature-dactivites-francaise-naf/20200217-090550/naf2008-listes-completes-5-niveaux.csv"
+  fichier: "naf.csv"
+
+archive_etablissements:
+  url: "https://files.data.gouv.fr/insee-sirene/StockEtablissement_utf8.zip"
+  fichier: "etablissements.zip"
 
 archive_historique_entreprises:
   url: "https://files.data.gouv.fr/insee-sirene/StockUniteLegaleHistorique_utf8.zip"
