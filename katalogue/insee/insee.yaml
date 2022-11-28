@@ -1,3 +1,24 @@
 communes:
     url: "https://www.insee.fr/fr/statistiques/fichier/6051727/commune_2022.csv"
     fichier: "communes.csv"
+
+archive_etablissements:
+  url: "https://files.data.gouv.fr/insee-sirene/StockEtablissement_utf8.zip"
+  fichier: "etablissements.zip"
+
+archive_entreprises:
+  url: "https://files.data.gouv.fr/insee-sirene/StockUniteLegale_utf8.zip"
+  fichier: "entreprises.zip"
+
+entreprises:
+  fichier: "archive_entreprises/StockUniteLegale_utf8.csv"
+
+archive_historique_entreprises:
+  url: "https://files.data.gouv.fr/insee-sirene/StockUniteLegaleHistorique_utf8.zip"
+  fichier: "histo_entreprises.zip"
+
+archive_historique_etablissements:
+  url: "https://files.data.gouv.fr/insee-sirene/StockEtablissementHistorique_utf8.zip"
+  fichier: "histo_etablissements.zip"
+
+
