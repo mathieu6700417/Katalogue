@@ -3,12 +3,6 @@ import pandas as pd
 from katalogue.dépot import Dépot
 
 class DépôtFAORécoltes(Dépot):
-    def __init__(self):
-        chemin_dossier = os.path.dirname(__file__)
-        nom_dossier_parent = chemin_dossier.split("/")[-1]
-        
-        super().__init__(nom_dossier_parent)
-        
 
     def _dataframe(self, nom):
         self.télécharger("d_z")

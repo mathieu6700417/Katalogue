@@ -6,8 +6,11 @@ from pathlib import Path
 import pandas as pd
 
 class Dépot:
-    def __init__(self, nom_fournisseur):
+    def __init__(self):
+
         chemin_dossier = os.path.dirname(__file__)
+        module = self.__class__.__module__
+        nom_fournisseur = module.split(".")[-2]
         
         fichier_conf = os.path.join(chemin_dossier, "config.yaml")
         conf = yaml.safe_load(open(fichier_conf, "r").read())

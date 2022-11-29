@@ -5,12 +5,6 @@ from tqdm import tqdm
     
     
 class DépôtINSEESireneEntreprises(Dépot):
-    def __init__(self):
-        chemin_dossier = os.path.dirname(__file__)
-        nom_dossier_parent = chemin_dossier.split("/")[-1]
-        
-        super().__init__(nom_dossier_parent)
-        
 
     def _entreprises(self, taille_paquet=100000):
         self.télécharger("archive_entreprises")
